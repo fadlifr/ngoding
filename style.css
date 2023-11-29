@@ -88,12 +88,9 @@ body {
   height: auto;
   display: block;
 }
-.container {
+.hero {
   max-width: 100%;
   margin: 0 auto;
-  padding: 0 40px;
-}
-.hero {
   align-items: center;
   min-height: 50vh;
   background: linear-gradient(to bottom, #f5f8fa 30%, #c8ddee 70%, #66aade);
@@ -130,14 +127,14 @@ body {
 }
 /* ==== end hero ==== */
 
-/* start service */
-.section {
+/* ==== start service ==== */
+.services {
 	padding: 20px;
 	text-align: center;
   justify-content: center;
   align-items: center;
 }
-.section h2 {
+.services h2 {
 	font-size: 2rem;
 	margin: 20px;
 	text-align: center;
@@ -181,7 +178,23 @@ body {
 	border-radius: 40px;
 	transform: translateY(-0.5rem);
 }
-/* end service */
+/* ==== end service ==== */
+
+/* ==== start about ==== */
+.about-content {
+	display: flex;
+
+	margin-top: 20px;
+}
+.info-img,
+.about-img {
+  max-width: 100%;
+	width: 350px;
+	height: auto;
+	margin: 10px;
+}
+
+/* ==== end about ==== */
 
 /*  =============
     Responsive style
@@ -231,8 +244,6 @@ body {
     /* min-height: 100vh; */
     /* min-height: calc(100vh - 3.5em); */
     transition: all 0.3 ease-in-out;
-  }
-  .container {
     text-align: center;
   }
 }
